@@ -1,0 +1,20 @@
+Algorithm: Read JSON File and Extract Data
+
+1. Import the necessary libraries, including 'org.json.simple.JSONObject', 'org.json.simple.parser.JSONParser', and 'java.io.FileReader'.
+
+2. Create a 'main' method to perform the following tasks:
+   - Create an 'Object' named 'obj'.
+   - Use a 'JSONParser' to parse the contents of the JSON file 'JSONExample.json' using 'FileReader'.
+   - Cast the parsed object as a 'JSONObject' named 'jo'.
+
+3. Extract and print the value associated with the key 'a' from the JSON object:
+   - Use 'jo.get("a")' to get the value.
+   - Cast the value to a 'Long'.
+   - Print the key and value.
+
+4. Extract and print the key-value pairs associated with the key 'b' (a nested JSON object):
+   - Get the value associated with the key 'b' using 'jo.get("b")'. This value is a 'Map'.
+   - Create an iterator ('itr') to iterate through the entries of the 'Map'.
+   - Use a loop to iterate through the entries of the map:
+     - Inside the loop, get the next entry using 'itr.next()'.
+     - Extract and print the key and value of the entry.
