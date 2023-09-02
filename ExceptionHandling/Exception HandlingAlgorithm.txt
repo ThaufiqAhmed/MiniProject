@@ -1,0 +1,22 @@
+Exception Handling:
+Power Calculator
+
+Step-1. Create an Interface called `Calculator` with a method signature `power(a, b)`.
+
+Step-2. Create a class called `PowerCalculator` that implements the `Calculator` interface and implements the `power(a, b)` method.
+
+Step-3. In the `power` method:
+   - Check if either the base `a` or exponent `b` is less than 0. If either is negative, throw an `IllegalArgumentException` with an appropriate error message.
+   - Initialize a `double` variable `value` to 1.0.
+   - Use a `for` loop to calculate the power by multiplying the base `a` by itself `b` times.
+   - Return the calculated `value`.
+
+Step-4. In the `main` method:
+   - Create a `Scanner` to read input from the user.
+   - Prompt the user to enter the base element and exponent.
+   - Read the values for `a` and `b` from the user.
+   - Create an instance of `PowerCalculator`.
+   - Inside a try-catch block, call the `power` method of the calculator with the input values.
+   - If an exception is thrown, catch it and print a warning message along with the exception message.
+   - If no exception is thrown, print the result, rounding it to the nearest integer using `Math.round`.
+
